@@ -23,16 +23,16 @@ class StudentController extends Controller
     private function get_student_data()
     {
         return [
-            'student_id'  => '2026-0001',                         // TODO: your student number
-            'name'        => 'Juan Dela Cruz',                    // TODO: your full name
+            'student_id'  => '2024-00241',                         // TODO: your student number
+            'name'        => 'Hernandez Jenuel A.',                    // TODO: your full name
             'course'      => 'BS Information Technology',         // TODO: your course
-            'year'        => '2nd Year',                          // TODO: your year level
-            'section'     => 'A',                                 // TODO: your section
-            'email'       => 'juan@example.com',                  // TODO: your email
-            'address'     => 'Bacoor, Cavite',                    // optional extra info
-            'contact_no'  => '0900-000-0000',                     // optional extra info
+            'year'        => '3rd Year',                          // TODO: your year level
+            'section'     => 'F6',                                 // TODO: your section
+            'email'       => 'hernadezjenuel@gmail.com',                  // TODO: your email
+            'address'     => 'Victoria, Oriental Mindoro',                    // optional extra info
+            'contact_no'  => '09953410483',                     // optional extra info
             'skills'      => 'PHP, HTML/CSS, JavaScript',         // optional extra info
-            'hobbies'     => 'Coding, Reading, Basketball',       // optional extra info
+            'hobbies'     => 'Watching Anime, Gaming , Reading Manga or Manhwa',       // optional extra info
             'description' => 'A BSIT student who enjoys building small web projects.',
         ];
     }
