@@ -56,15 +56,14 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 |   $database variable.
 |   Example: $database['another_example'] = array('key' => 'value')
 */
-
-    $database['main'] = [
-    'driver'   => '',
-    'hostname' => '',
-    'port'     => '',
-    'username' => '',
-    'password' => '',
-    'database' => '',
-    'charset'  => '',
-    'dbprefix' => '',
+$database['main'] = [
+    'driver'   => env('DB_DRIVER', 'mysqli'),
+    'hostname' => env('DB_HOST', 'localhost'),
+    'port'     => env('DB_PORT', 3306),
+    'username' => env('DB_USER', 'root'),
+    'password' => env('DB_PASSWORD', ''),
+    'database' => env('DB_NAME', 'mydb'),
+    'charset'  => env('DB_CHARSET', 'utf8mb4'),
+    'dbprefix' => env('DB_PREFIX', ''),
 ];
 ?>
