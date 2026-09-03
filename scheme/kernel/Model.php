@@ -964,6 +964,14 @@ class Model {
      */
     public function __get($key)
     {
+        if ($key === 'db' && !isset(lava_instance()->db)) {
+            try {
+                lava_instance()->call->database();
+            } catch (Throwable $e) {
+                return null;
+            }
+        }
+
         return lava_instance()->$key;
     }
                             
