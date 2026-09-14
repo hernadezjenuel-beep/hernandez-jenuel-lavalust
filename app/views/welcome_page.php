@@ -675,8 +675,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
                     </div>
                     <div class="code-body">
 <span class="var">$router</span>-><span class="fn">get</span>(<span class="str">'/'</span>, <span class="str">'Welcome::index'</span>);<br>
-<span class="var">$router</span>-><span class="fn">get</span>(<span class="str">'/users'</span>, <span class="str">'Users::index'</span>);<br>
-<span class="var">$router</span>-><span class="fn">post</span>(<span class="str">'/users/store'</span>, <span class="str">'Users::store'</span>);
+<span class="var">$router</span>-><span class="fn">get</span>(<span class="str">'/products'</span>, <span class="str">'Products::index'</span>);
                     </div>
                 </div>
 

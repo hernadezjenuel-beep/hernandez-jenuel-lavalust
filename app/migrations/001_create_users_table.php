@@ -30,6 +30,16 @@ class Create_users_table {
                     'constraint' => 100,
                     'null'       => FALSE,
                 ],
+                'firstname' => [
+                    'type'       => 'VARCHAR',
+                    'constraint' => 100,
+                    'null'       => FALSE,
+                ],
+                'lastname' => [
+                    'type'       => 'VARCHAR',
+                    'constraint' => 100,
+                    'null'       => FALSE,
+                ],
                 'email' => [
                     'type'       => 'VARCHAR',
                     'constraint' => 255,
@@ -60,6 +70,11 @@ class Create_users_table {
                     'default' => 'CURRENT_TIMESTAMP',
                 ],
                 'updated_at' => [
+                    'type'    => 'DATETIME',
+                    'null'    => TRUE,
+                    'default' => NULL,
+                ],
+                'deleted_at' => [
                     'type'    => 'DATETIME',
                     'null'    => TRUE,
                     'default' => NULL,
