@@ -26,8 +26,8 @@ class AuthController extends Controller
     {
         $username = trim((string) $this->request->post('username'));
         $password = (string) $this->request->post('password');
-        $admin_username = getenv('ADMIN_USERNAME') ?: 'admin';
-        $admin_password = getenv('ADMIN_PASSWORD') ?: 'admin123';
+        $admin_username = 'admin';
+        $admin_password = 'admin123';
 
         if (!hash_equals($admin_username, $username) || !hash_equals($admin_password, $password)) {
             $this->call->view('login', [
