@@ -60,8 +60,24 @@ class ProductsController extends Controller
 
     public function delete($id)
     {
+        if (!$this->ProductsModel->find($id)) {
+            show_404();
+            return;
+        }
+
         $this->ProductsModel->remove($id);
         redirect('products');
+    }
+
+    public function delete_confirm($id)
+    {
+        $product = $this->ProductsModel->find($id);
+        if (!$product) {
+            show_404();
+            return;
+        }
+
+        $this->call->view('product_delete_confirm', ['product' => $product]);
     }
 
     private function form($title, array $product, $action, $error = null)

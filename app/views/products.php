@@ -36,7 +36,7 @@
                     <td><?= (int) $product['quantity']; ?></td>
                     <td class="actions">
                         <a href="<?= htmlspecialchars(site_url('products/edit/' . (int) $product['id']), ENT_QUOTES, 'UTF-8'); ?>">Edit</a>
-                        <form class="inline" method="post" action="<?= htmlspecialchars(site_url('products/delete/' . (int) $product['id']), ENT_QUOTES, 'UTF-8'); ?>"><button type="submit">Delete</button></form>
+                        <a href="<?= htmlspecialchars(site_url('products/delete/' . (int) $product['id'] . '/confirm'), ENT_QUOTES, 'UTF-8'); ?>">Delete</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

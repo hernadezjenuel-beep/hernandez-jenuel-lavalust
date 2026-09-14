@@ -56,5 +56,6 @@ $router->group(['middleware' => 'auth'], function ($router) {
 	$router->post('/products/create', 'ProductsController::store');
 	$router->get('/products/edit/{id}', 'ProductsController::edit');
 	$router->post('/products/edit/{id}', 'ProductsController::update');
+	$router->get('/products/delete/{id}/confirm', 'ProductsController::delete_confirm');
 	$router->post('/products/delete/{id}', 'ProductsController::delete');
 });
