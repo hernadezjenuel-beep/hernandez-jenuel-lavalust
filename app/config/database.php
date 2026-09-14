@@ -56,19 +56,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 |   $database variable.
 |   Example: $database['another_example'] = array('key' => 'value')
 */
-<<<<<<< HEAD
 $database['main'] = [
-    'driver'   => getenv('DB_DRIVER'),
-    'hostname' => getenv('DB_HOST'),
-    'port'     => getenv('DB_PORT'),
-    'username' => getenv('DB_USER'),
-    'password' => getenv('DB_PASSWORD'),
-    'database' => getenv('DB_NAME'),
-    'charset'  => getenv('DB_CHARSET'),
-    'dbprefix' => getenv('DB_PREFIX'),
-=======
-
-    $database['main'] = [
     'driver'   => getenv('DB_DRIVER') ?: 'mysql',
     'hostname' => getenv('DB_HOST') ?: 'localhost',
     'port'     => getenv('DB_PORT') ?: '3306',
@@ -77,6 +65,5 @@ $database['main'] = [
     'database' => getenv('DB_NAME') ?: 'mydb',
     'charset'  => getenv('DB_CHARSET') ?: 'utf8mb4',
     'dbprefix' => getenv('DB_PREFIX') ?: '',
->>>>>>> da5b970 (Add authenticated product management)
 ];
 ?>
