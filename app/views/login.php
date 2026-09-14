@@ -15,6 +15,7 @@
 <body>
     <form method="post" action="<?= htmlspecialchars(site_url('login'), ENT_QUOTES, 'UTF-8'); ?>">
         <h2>Sign in</h2>
+        <p class="hint">Demo username: <strong>admin</strong><br>Demo password: <strong>admin123</strong></p>
         <?php if (!empty($error)) : ?><p class="error"><?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8'); ?></p><?php endif; ?>
         <label for="username">Username</label>
         <input id="username" name="username" maxlength="100" required value="<?= htmlspecialchars($username, ENT_QUOTES, 'UTF-8'); ?>">
